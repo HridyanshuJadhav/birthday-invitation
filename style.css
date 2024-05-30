@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitation Website</title>
-    <link rel="stylesheet" href="vignesh-birthday-invitation.css">
+    <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
 </head>
 <body>
@@ -27,6 +27,6 @@
         <h1 style="padding-left: 58px;">तुलादान</h1>
         <img src="C:\Users\PILR\Downloads\226-2268189_transparent-libra-png-libra-png-png-download-removebg-preview.png" id="tuladan-img"><p>समय:-दोपहर 01 बजे</p>
 
-    <script src="vignesh-birthday-invitation.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
