@@ -1,32 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitation Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
-</head>
-<body>
-    <!-- onload="launchParty()"> -->
-    <div class="door left-door"></div>
-    <div class="door right-door"></div>
-    <p id="ohm">"ॐ"</p>
-    <div class="container">
-        <img src="https://i.pinimg.com/736x/e7/2e/7a/e72e7af80d9218a31e2c5795385f159b.jpg" width="50px" 
-        style="align-items: center;">
-        <p style="text-align: left; padding:0px;">श्रीमान,</p>
-        <p style="padding:0px;"> बड़े ही हर्ष का विषय है कि हमारे कुल देवता की असीम कृपा से सौलंकी परिवार में शुभ प्रसंग आया है। 
-            जिसमें आपकी उपस्थिति हमारे लिए अति आवश्यक और सम्मानीय है</p>
-        <pre style="font-size: 15px; font-family: 'Amita';">दिनांक:- 02/06/2024
-स्थान:- कनवन, जिला धार</pre>
+body {
+    font-family: 'Amita';
+    background-color: #f5f5dc;
+    color: #4b0082;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    background-image:  linear-gradient(to bottom, #ffe5b4, #ffebcd);
 
-        <h1>नवीन प्रतिष्ठान शुभारंभ</h1>
-        <img src="C:\Users\PILR\Downloads\png-transparent-shop-store-sale-shopping-building-red-awning-removebg-preview.png" id="shop-img">
-        <p>समय:- प्रातः 09 बजे</p>
-        <h1 style="padding-left: 58px;">तुलादान</h1>
-        <img src="C:\Users\PILR\Downloads\226-2268189_transparent-libra-png-libra-png-png-download-removebg-preview.png" id="tuladan-img"><p>समय:-दोपहर 01 बजे</p>
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.container {
+    border: 2px solid #4b0082;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 248, 220, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #d2691e;
+}
+
+button {
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+.door {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    transition: transform 2s ease-in-out;
+    background-color: #d2691e;
+    background-image: linear-gradient(to bottom, #f97d25, #fc3434);
+    border: 5px solid #8b4513;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.left-door {
+    left: 0;
+    transform: translateX(0);
+}
+
+.right-door {
+    right: 0;
+    transform: translateX(0);
+}
+
+.open .left-door {
+    transform: translateX(-100%);
+}
+
+.open .right-door {
+    transform: translateX(100%);
+}
+
+#ohm{
+    margin-top: -20px;
+    display: flow;
+    margin-bottom: -3px;
+}
+
+#shop-img{
+    width: 118px;
+    display: flow;
+    float: right;
+    margin-top: -32px;
+}
+
+#tuladan-img{
+    width: 80px;
+    display: flow;
+    float: right;
+    margin-top: -46px;
+}
